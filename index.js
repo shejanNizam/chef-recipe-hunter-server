@@ -3,10 +3,10 @@ const app = express();
 const cors = require("cors");
 const port = process.env.PORT || 7000;
 
-// data load
+//data load
 const chefData = require("./data/chefData.json");
 
-// middle ware
+//middle ware
 app.use(cors());
 
 app.get("/", (req, res) => {
